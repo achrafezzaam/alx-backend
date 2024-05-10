@@ -30,7 +30,7 @@ class Server:
         to return in a list '''
         return (page_size * (page - 1), page_size * page)
 
-    def get_page(self, page: int=1, page_size: int=10) -> List[List]:
+    def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         ''' Retrieve a page'''
         assert type(page) == int and type(page_size) == int
         assert page > 0 and page_size > 0
